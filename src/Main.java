@@ -12,7 +12,7 @@ public class Main {
         listTwo.add(1);
         listTwo.add(0);
 
-        System.out.println(avarageNumbers(listTwo));
+        System.out.println(averageNumbers(listTwo));
 
         multiplicationTable(15);
 
@@ -40,7 +40,7 @@ public class Main {
         return total;
     }
 
-    public static double avarageNumbers(List<Integer> list) {
+    public static double averageNumbers(List<Integer> list) {
         int total = 0;
         for (int i = 0; i < list.size(); i++) {
             total += list.get(i);
@@ -52,8 +52,8 @@ public class Main {
 
     public static void multiplicationTable(int n) {
         int count = 1;
-        while (count <= 15) {
-            System.out.println(n * count);
+        while (count <= 10) {
+            System.out.println(n + "*" + count + "=" + n * count);
             count++;
         }
     }
